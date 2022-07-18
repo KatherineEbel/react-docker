@@ -50,7 +50,7 @@ jobs:
         id: format_time
         with:
           pattern: '[:\.]+'
-          string: "${{ steps.current_time.ouputs.time }}"
+          string: "${{ steps.current_time.outputs.time }}"
           replace_with: '-'
           flags: 'g'
       - name: Generate Deployment Package
